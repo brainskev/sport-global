@@ -24,3 +24,5 @@ numbers = [1,2,3,4,5,6,7,8,9,10]
 
 result = binary_search(numbers, 6)
 verify(result)
+result = binary_search(numbers, 20)
+verify(result)
