@@ -3,7 +3,7 @@ function binary_search(list, target) {
     let last = list.length
 
     while (first <= last) {
-        let midpoint = (first + last) / 2
+        let midpoint = Math.floor(first + last) / 2
 
         if (list[midpoint] === target) {
             return midpoint
@@ -23,5 +23,5 @@ function verify(index) {
 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-let result = binary_search(numbers, 6)
+let result = binary_search(numbers, 20)
 verify(result)
